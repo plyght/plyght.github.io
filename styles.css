@@ -21,4 +21,9 @@ body {
     color: white;
     text-decoration: none;
     margin-top: 10px;
+    transition: transform 0.3s; /* This will animate the transform property */
+}
+
+.centered a:hover {
+    transform: scale(1.15); /* This will scale the link to 110% of its original size on hover */
 }

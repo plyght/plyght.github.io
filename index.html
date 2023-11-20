@@ -1,18 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>plyght</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #title {
+            font-size: 0; /* remove whitespace */
+        }
+
+        #title span {
+            font-size: 2rem; /* set font size of individual letters */
+        }
+    </style>
 </head>
 <body>
     <div class="centered">
-        <h1>plyght</h1>
+        <h1 id="title">
+            <span>p</span>
+            <span>l</span>
+            <span>y</span>
+            <span>g</span>
+            <span>h</span>
+            <span>t</span>
+        </h1>
         <a href="https://github.com/plyght">Github</a>
         <a href="https://youtube.com/@plyght_">YouTube</a>
         <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
     </div>
+    <script>
+        document.getElementById('title').addEventListener('mouseover', function() {
+            var title = document.getElementById('title');
+            var letters = title.getElementsByTagName('span');
+            for (var i = 0; i < letters.length; i++) {
+                letters[i].textContent = String.fromCharCode(Math.random() * (122 - 97) + 97);
+            }
+        });
+
+        document.getElementById('title').addEventListener('mouseout', function() {
+            var title = document.getElementById('title');
+            var letters = title.getElementsByTagName('span');
+            var plyght = ['p', 'l', 'y', 'g', 'h', 't'];
+            for (var i = 0; i < letters.length; i++) {
+                letters[i].textContent = plyght[i];
+            }
+        });
+    </script>
 </body>
 </html>
-

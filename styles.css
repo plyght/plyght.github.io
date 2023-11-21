@@ -23,7 +23,7 @@ body {
     font-size: 2.5em;
 }
 
-.animated-link {
+.centered a {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -31,28 +31,11 @@ body {
     padding: 10px 20px;
     transition: transform 0.3s, background 0.3s;
     border-radius: 5px;
-    position: relative;
-    overflow: hidden;
 }
 
-.animated-link::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s;
-}
-
-.animated-link:hover {
+.centered a:hover {
     transform: scale(1.15);
-}
-
-.animated-link:hover::after {
-    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .centered nav {

@@ -1,5 +1,5 @@
 const config = {
-  defaultTitle: 'Abell Default Template',
-  basePath: '/blog/'
+  defaultTitle: 'Abell Default Template'
 };
+
 export default config;

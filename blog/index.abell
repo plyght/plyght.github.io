@@ -1,7 +1,7 @@
 {{
   /** @declarations */
   const a = 'Hello, ';
-  const b = 'World 🌻';
+  const b = 'World!';
 }}
 
 <html>

@@ -1,5 +1,5 @@
 // index.abell
-var blog_default = "./index-14y1zxmb.abell";
+var blog_default = "./index-jx8whx56.abell";
 export {
   blog_default as default
 };

@@ -1,0 +1,9 @@
+{{
+  /** @declarations */
+  const a = 'Hello, ';
+  const b = 'World!';
+}}
+
+<html>
+<body>{{ a + b.toUpperCase() }}</body>
+</html>
